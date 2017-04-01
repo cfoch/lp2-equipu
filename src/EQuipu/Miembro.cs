@@ -7,16 +7,16 @@ namespace EQuipu
     {
         private int codigo;
         private string nombre;
-        private DateTime fecha_nacimiento;
+        private DateTime fechaNacimiento;
         private string direccion;
         private string email;
         private Sexo sexo;
 
-        public Miembro(int codigo, string nombre, DateTime fecha_nacimiento, string direccion, string email, Sexo sexo)
+        public Miembro(int codigo, string nombre, DateTime fechaNacimiento, string direccion, string email, Sexo sexo)
         {
             this.Codigo = codigo;
             this.Nombre = nombre;
-            this.Fecha_nacimiento = fecha_nacimiento;
+            this.FechaNacimiento = fechaNacimiento;
             this.Direccion = direccion;
             this.Email = email;
             this.Sexo = sexo;
@@ -24,7 +24,7 @@ namespace EQuipu
 
         public int Codigo { get => codigo; private set => codigo = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public DateTime Fecha_nacimiento { get => fecha_nacimiento; set => fecha_nacimiento = value; }
+        public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public string Email { get => email; set => email = value; }
         public Sexo Sexo { get => sexo; set => sexo = value; }
